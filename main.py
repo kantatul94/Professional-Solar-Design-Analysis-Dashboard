@@ -91,7 +91,7 @@ with st.sidebar:
     )
     n_series = st.number_input(
         "Modules per String", 
-        value=18, 
+        value=24, 
         min_value=1, 
         max_value=50,
         help="Limited by inverter voltage window"
@@ -111,7 +111,7 @@ with st.sidebar:
         "No. of Inverters", 
         value=4, 
         min_value=1, 
-        max_value=100
+        max_value=10000
     )
     inv_rating = st.number_input(
         "AC Rating per Inv (kW)", 
@@ -839,4 +839,4 @@ with st.expander("📋 Detailed System Information"):
 
 # --- 11. Footer ---
 st.markdown("---")
-st.caption(f"⚡ Solar Engineering Dashboard | Powered by pvlib & PVGIS | Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+st.caption(f"⚡ Solar Engineering Dashboard | Powered by PVLIB  | Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
